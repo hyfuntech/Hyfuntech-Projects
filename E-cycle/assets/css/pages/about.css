@@ -1,0 +1,140 @@
+
+.about-hero-section {
+  
+    background: url("../../images/about/about-banner.png") center center / cover no-repeat;  
+   
+}
+
+section.yourride-banner-section {
+    background: url(../../images/about/bike-shop.png) center center / cover no-repeat;
+    margin: 80px auto;
+    width: 97%;
+    border-radius: 20px;
+}
+
+.yourride-banner-grid {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    width: 100%;
+    padding: 80px 0;
+}
+.yourride-content-left {
+    max-width: 35%;
+    flex: 35%;
+}
+.yourride-content-right{
+      max-width: 50%;
+    flex: 50%;
+    color: #fff;
+}
+.yourride-content-right p {
+    line-height: 26px;
+    margin: 20px 0 50px;
+}
+
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    align-items: start;
+    margin-top: 55px;
+}
+
+
+.explore-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.explore-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.explore-icon-wrapper svg {
+    width: 52px;
+    height: 52px;
+}
+
+.simply-explore-section {
+    margin: 80px 0 0;
+}
+.explore-col-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+/* Column Description Text */
+.explore-col-desc {
+   
+  
+    max-width: 360px;
+}
+
+
+.feature-banner-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 0;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.feature-banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1030px;
+    margin: auto;
+}
+
+.feature-banner-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.feature-banner-logo img {
+    height: 165px;
+    width: auto;
+    display: block;
+}
+
+.feature-banner-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    max-width: max-content;
+    gap: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.feature-text {
+   
+    
+    color: #ffffff;    font-weight: 500;
+   
+}

@@ -1,0 +1,172 @@
+
+.electric-bikes-hero-section {
+  
+    background: url("../../images/electric-bikes/bike-banner.png") center center / cover no-repeat;  
+   
+}
+
+
+
+.amplify-banner-section {
+    background: url(../../images/electric-bikes/video-bg.png) center center / cover no-repeat;
+    margin: 80px auto;
+    width: 97%;
+    border-radius: 20px;
+}
+
+.amplify-banner-grid {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    padding: 100px 0;
+}
+
+
+.video-preview-card {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+        max-width: 40%;
+    flex: 40%;
+}
+
+.video-poster-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.video-preview-card:hover .video-poster-img {
+    transform: scale(1.06);
+}
+
+/* Central Black Circular Play Button with SVG Triangle */
+.play-btn-circle {
+    width:100px;
+    height:100px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.play-btn-circle svg {
+    width: 35px;
+    height: 35px;
+    fill: #ffffff;
+    margin-left: 4px; /* Optically center triangle */
+    transition: transform 0.2s ease;
+}
+
+.video-preview-card:hover .play-btn-circle {
+    background-color: #39b54a;
+    transform: translate(-50%, -50%) scale(1.12);
+    box-shadow: 0 8px 25px rgba(57, 181, 74, 0.6);
+}
+
+
+.amplify-content-right {
+    color: #ffffff;
+    max-width: 46%;
+    flex:46%
+}
+
+.amplify-content-right p {
+    line-height: 26px;
+    margin: 20px 0 50px;
+}
+
+
+/* Video Modal Popup Overlay */
+.video-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+}
+
+.video-modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.video-modal-container {
+    position: relative;
+    width: 100%;
+    max-width: 860px;
+    background: #000000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+}
+
+.video-modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+    transition: background 0.2s ease;
+}
+
+.video-modal-close-btn:hover {
+    background: #39b54a;
+}
+
+.video-modal-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+}
+
+.video-modal-wrapper video,
+.video-modal-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+

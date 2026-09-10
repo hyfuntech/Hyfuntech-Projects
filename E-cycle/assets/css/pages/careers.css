@@ -1,0 +1,50 @@
+
+.career-hero-section {
+  
+    background: url("../../images/careers/Careers.png") center center / cover no-repeat;  
+   
+}
+
+
+.careers-section {
+    padding: 80px 0;
+}
+.careers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    align-items: stretch;
+}
+
+.career-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.career-card-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 21px;
+  
+}
+
+.career-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.career-card:hover .career-card-img img {
+    transform: scale(1.04);
+}
+.career-card-desc {
+    color: #555555;
+    margin: 24px 0;
+}
+
+
+
